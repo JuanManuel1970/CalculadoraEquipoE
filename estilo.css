@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f3f3;
@@ -7,22 +8,24 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+
 h1 {
-    font-size: 24px;
+    font-size: 45px; 
     margin: 20px 0;
 }
 
 
 input[type="number"] {
-    max-width: 200px; 
-    margin: 0 auto; 
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px; 
+    font-size: 18px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
     margin: 10px 0;
 }
 
@@ -31,7 +34,7 @@ input[type="number"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px 0;
+    margin: 20px 0; 
 }
 
 button {
@@ -39,12 +42,14 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    border-radius: 5px;
+    padding: 20px 30px; 
+    margin: 10px; 
+    font-size: 20px; 
+    border-radius: 10px; 
     transition: background-color 0.3s;
 }
+
+
 
 button:hover {
     background-color: #45a049;
@@ -52,20 +57,37 @@ button:hover {
 
 
 h2 {
-    font-size: 24px;
+    font-size: 32px; 
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     input[type="number"] {
+        max-width: 700px;
         width: 100%;
+        margin: 0 auto;
+        padding: 15px; 
+        font-size: 68px; 
+            
     }
 
-    .buttons {
-        flex-direction: column;
+    h1 {
+        font-size: 90px; 
+        margin: 100px 0;
     }
 
     button {
-        width: 100%;
+        border: none;
+        padding: 20px 30px; 
+        margin: 15px;
+        font-size: 40px; 
+         margin-top: 90px;
+  
     }
+    
+    h2 {
+        font-size: 42px; 
+        margin-top: 60px;
+    }
+
 }
